@@ -1,0 +1,400 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s;
+    text-decoration: none;
+}
+
+html{
+    
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    padding: 2rem 7%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 100000;
+    background-color: white;
+}
+.header #logo{
+    color: black;
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.header #logo span{
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navbar a{
+    font-size: 1.7rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    color: #163235;
+}
+.navbar a:hover{
+    color: red;
+}
+.navbar.active{
+    left: 0;
+}
+.icons #menu-bars{
+    font-size: 2rem;
+    color: black;
+    display: none;
+}
+.icons #menu-bars:hover{
+  color: red;
+}
+
+/* Background */
+.background{
+    position: relative;
+    background:  linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(Asset/back.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    margin-top: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.background{
+    display: flex;
+    flex-direction: column;
+}
+.background h1{
+    font-size: 50px;
+    color: white;
+}
+.background h1 span{
+    color: red;
+}
+.background p{
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+}
+.background a{
+    border-radius: 15px;
+    padding: 1.5rem 2rem;
+    color: white;
+    font-size: 1.5rem;
+    background: red;
+
+}
+.background a:hover{
+    opacity: 0.5;
+    
+}
+/* End Background */
+
+
+
+/* Recommended laptop */
+.recomended-laptop{
+    padding: 3rem 7%;
+    padding-top: 10%;
+}
+.recomended-laptop h1{
+    font-size: 40px;
+    text-align: center;
+    color: black;
+    padding: 1rem 0;
+}
+.recomended-laptop h1 span{
+    color: red;
+}
+.recomended-laptop h1 span:hover{
+    letter-spacing: 4px;
+}
+.main-laptop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.main-laptop .inner-laptop{
+    flex: 280px;
+}
+.main-laptop .inner-laptop .main-image a img{
+    width: 50vh;
+    height: 50vh;
+    object-fit: contain;
+}
+.inner-laptop h2{
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.inner-laptop p{
+    font-size: 1.5rem;
+}
+.main-image :hover {
+    opacity: 0.5;
+}
+.laptop {
+    display: flex;
+    flex-direction: column;
+}
+.laptop a{
+    padding: 1.5rem 2rem;
+    color: white;
+    font-size: 1.5rem;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.laptop a:hover{
+    transform: scaleY(1.1);
+    letter-spacing: 2px;
+    border-radius: 15px;
+}
+
+/* End Recommend */
+
+
+
+/* Layanan Service */
+.our-services{
+    padding: 2rem 7%;
+    padding-top: 10%;
+}
+.our-services h1{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.our-services h1 span{
+    color: red;
+}
+.main-services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.main-services .inner-service{
+    flex: 1 1 200px;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.inner-icons {
+    font-size: 50px;
+    margin: 0.5rem;
+}
+.inner-icons a .bx {
+    padding: 5px;
+    background-color: white;
+    color: red;
+    border-radius: 20%;
+}
+
+.inner-service h2{
+    font-size: 2rem;
+    color: black;
+    padding: .5rem;
+    padding-bottom: 10px;;  
+}
+.inner-service h2 span{
+    color: red;
+}
+.inner-service p{
+    color: black;
+    font-size: 1.5rem;
+    padding: 0;
+    text-align: left;
+    padding-bottom: 10%;
+}
+.our-services .main-services .inner-service .service-contact a {
+    border-radius: 15px;
+    padding: 1.5rem 2rem;
+    color: white;
+    font-size: 1.5rem;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.our-services .main-services .inner-service .service-contact a:hover{
+    opacity: 0.7;
+    
+}
+/*End Layanan Service */
+
+
+
+
+
+/* Promo Start */
+.promo {
+    padding: 3rem 7%;
+}
+
+.promo h1{
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    padding: 1.5rem 0;
+}
+.promo h1 span{
+    color: red;
+}
+.main-promo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.inner-promo {
+    flex: 1 1 45rem;
+    padding: 2rem 4rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.inner-promo p{
+    font-size: 1.5rem;
+}
+.promo-client {
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+}
+.promo-client span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 20px;
+    color: red;
+}
+/* End Promo */
+
+
+/*FOOTER*/
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 5vh;
+}
+ul {
+  list-style: none;
+}
+.footer {
+  background-color: #24262b;
+  padding: 70px 0;
+
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #fef6f1;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: red;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.footer-col ul li a:hover {
+  color: red;
+  padding-left: 8px;
+}
+
+.social-links {
+    font-size: 27px;
+    margin: 0.5rem;
+}
+.social-links a .bx {
+    padding: 5px;
+    background-color: red;
+    color: #fef6f1;
+    border-radius: 50%;
+}
+.social-links a .bx:hover {
+    color : red;
+    background-color: #fef6f1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+    html{
+        font-size: 55%;
+    }
+    .icons #menu-bars{
+        display: initial;
+    
+    }
+    .header{
+        padding: 2rem;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 100%;
+        right: 0;
+    }
+    .navbar a{
+        display: block;
+        font-size: 1.5rem;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+
+
+}

@@ -1,0 +1,234 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s;
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    padding: 2rem 7%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 100000;
+    background-color: white;
+}
+.header #logo{
+    color: black;
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.header #logo span{
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navbar a{
+    font-size: 1.7rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    color: #163235;
+}
+.navbar a:hover{
+    color: red;
+}
+.navbar.active{
+    left: 0;
+}
+.icons #menu-bars{
+    font-size: 2rem;
+    color: black;
+    display: none;
+}
+.icons #menu-bars:hover{
+  color: red;
+}
+
+/* Start */
+
+
+
+.menu {
+  padding: 50px;
+  margin-top: 60px;
+  padding-left: 100px;
+}
+.judul h1 {
+  background-color: #f1f1f1;
+}
+.judul h1 a{
+  color: black;
+  padding-bottom: 20px;
+}
+.judul h1 a:hover {
+  color: red;
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+} 
+.menu span {
+  color: red;
+}
+
+.images img{
+  width: 343px;
+  height: 343px;
+  object-fit: cover;
+}
+
+.buy a{
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  font-size: large;
+  padding-left: 100px;
+  text-align: center;
+}
+.images a:hover {
+  opacity: 0.5;
+}
+
+
+
+.desk {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.desk h1 {
+  font-size: 40px;
+}
+.desk p {
+  font-size: medium;
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+}
+
+
+
+
+/*FOOTER*/
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5vh;
+  }
+  ul {
+    list-style: none;
+  }
+  .footer {
+    background-color: #24262b;
+    padding: 70px 0;
+  
+  }
+  .footer-col {
+    width: 25%;
+    padding: 0 15px;
+  }
+  .footer-col h4 {
+    font-size: 18px;
+    color: #fef6f1;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: red;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a {
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .footer-col ul li a:hover {
+    color: red;
+    padding-left: 8px;
+  }
+  
+  .social-links {
+      font-size: 27px;
+      margin: 0.5rem;
+  }
+  .social-links a .bx {
+      padding: 5px;
+      background-color: red;
+      color: #fef6f1;
+      border-radius: 50%;
+  }
+  .social-links a .bx:hover {
+      color : red;
+      background-color: #fef6f1;
+  }
+  
+  
+@media (max-width:768px) {
+  html{
+      font-size: 55%;
+  }
+  .icons #menu-bars{
+      display: initial;
+  
+  }
+  .header{
+      padding: 2rem;
+  }
+  .navbar{
+      position: absolute;
+      top: 100%;
+      left: 100%;
+      right: 0;
+  }
+  .navbar a{
+      display: block;
+      font-size: 1.5rem;
+      margin: 1rem;
+      padding: 1rem;
+  }
+
+
+
+}
